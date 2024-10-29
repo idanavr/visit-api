@@ -21,25 +21,12 @@ $ yarn run start:dev
 $ yarn run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
 ## Local Env Setup 
 
 ### Install Postgres Docker
 
 ```
-docker run -d --name lasso-postgres -e POSTGRES_PASSWORD=123456 -p 5432:5432 postgres
+docker run -d --name postgres -e POSTGRES_PASSWORD=123456 -p 5432:5432 postgres
 ```
 
 ### Update To Current Schema
